@@ -11,7 +11,7 @@ class MyComponents extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
-          leading: FlatButton(
+          leading: TextButton(
             child: Icon(Icons.arrow_back_ios, color: Colors.white),
             onPressed: () => Navigator.pop(context),
           ),
@@ -113,9 +113,10 @@ class MyComponents extends StatelessWidget {
                 print('点击按钮');
               },
             ),
-            RaisedButton(
-              color: Colors.lightGreen,
-              disabledColor: Colors.red,
+            ElevatedButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.lightGreen)),
               child: Container(
                 alignment: Alignment.centerLeft,
                 width: 150.0,

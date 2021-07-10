@@ -87,8 +87,7 @@ class _SearchBarState extends State<SearchBar> {
   // 搜索栏上的扫一扫按钮
   Widget _buildScanButton() {
     return Container(
-      child: FlatButton(
-        padding: EdgeInsets.all(0.0),
+      child: TextButton(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -119,8 +118,7 @@ class _SearchBarState extends State<SearchBar> {
   Widget _buildMessageButton() {
     return Container(
       width: 56.0,
-      child: FlatButton(
-        padding: EdgeInsets.all(0.0),
+      child: TextButton(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,

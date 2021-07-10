@@ -24,7 +24,7 @@ class _My34WrapLayoutState extends State<My34WrapLayout> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
-          leading: FlatButton(
+          leading: TextButton(
             child: Icon(
               Icons.arrow_back_ios,
               color: Colors.white,

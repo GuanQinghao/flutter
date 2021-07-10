@@ -66,7 +66,7 @@ class _CartState extends State<Cart> with AutomaticKeepAliveClientMixin {
           ),
         ),
         actions: <Widget>[
-          FlatButton(
+          TextButton(
             onPressed: () {
               setState(() {
                 _editable = !_editable;
@@ -116,7 +116,7 @@ class _CartState extends State<Cart> with AutomaticKeepAliveClientMixin {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 // 全选按钮
-                FlatButton(
+                TextButton(
                   onPressed: () {},
                   child: Container(
                     width: 70.0,
@@ -160,7 +160,7 @@ class _CartState extends State<Cart> with AutomaticKeepAliveClientMixin {
                 ),
 
                 Container(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () {
                       setState(() {});
                     },
@@ -170,10 +170,8 @@ class _CartState extends State<Cart> with AutomaticKeepAliveClientMixin {
                         color: Colors.white,
                       ),
                     ),
-                    color: Colors.red,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(25),
-                    ),
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(Colors.red)),
                   ),
                 ),
               ],

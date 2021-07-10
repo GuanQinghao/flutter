@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MyFlatButton extends StatelessWidget {
+class MyTextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String title = 'Flutter 扁平按钮示例';
@@ -10,7 +10,7 @@ class MyFlatButton extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
-          leading: FlatButton(
+          leading: TextButton(
             child: Icon(
               Icons.arrow_back_ios,
               color: Colors.white,
@@ -21,8 +21,10 @@ class MyFlatButton extends StatelessWidget {
           ),
         ),
         body: Center(
-          child: FlatButton(
-            color: Colors.lightBlue,
+          child: TextButton(
+            style: ButtonStyle(
+              backgroundColor:MaterialStateProperty.all(Colors.lightBlue),
+            ),
             onPressed: () {
               print('点击按钮。');
             },

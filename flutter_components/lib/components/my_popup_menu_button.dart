@@ -13,7 +13,7 @@ class MyPopupMenuButton extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
-          leading: FlatButton(
+          leading: TextButton(
             child: Icon(
               Icons.arrow_back_ios,
               color: Colors.white,
@@ -24,7 +24,7 @@ class MyPopupMenuButton extends StatelessWidget {
           ),
         ),
         body: Center(
-          child: FlatButton(
+          child: TextButton(
             onPressed: () {},
             child: PopupMenuButton<ConferenceItem>(
               onSelected: (ConferenceItem result) {},

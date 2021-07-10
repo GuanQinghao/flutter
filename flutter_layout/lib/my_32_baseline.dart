@@ -24,7 +24,7 @@ class _My32BaselineLayoutState extends State<My32BaselineLayout> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
-          leading: FlatButton(
+          leading: TextButton(
             child: Icon(
               Icons.arrow_back_ios,
               color: Colors.white,

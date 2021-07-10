@@ -24,7 +24,7 @@ class _My31TransformLayoutState extends State<My31TransformLayout> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
-          leading: FlatButton(
+          leading: TextButton(
             child: Icon(
               Icons.arrow_back_ios,
               color: Colors.white,

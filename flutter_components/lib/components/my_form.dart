@@ -28,7 +28,7 @@ class _MyFormState extends State<MyForm> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
-          leading: FlatButton(
+          leading: TextButton(
             child: Icon(
               Icons.arrow_back_ios,
               color: Colors.white,
@@ -74,7 +74,7 @@ class _MyFormState extends State<MyForm> {
             SizedBox(
               width: 340.0,
               height: 42.0,
-              child: RaisedButton(
+              child: ElevatedButton(
                 onPressed: login,
                 child: Text(
                   '登录',

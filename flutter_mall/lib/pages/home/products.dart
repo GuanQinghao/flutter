@@ -44,7 +44,7 @@ class _ProductsState extends State<Products> {
         actions: <Widget>[
           Container(
             width: 56.0,
-            child: FlatButton(
+            child: TextButton(
               onPressed: () {
                 Toast.toast(context, '点击分享');
               },
@@ -140,7 +140,7 @@ class _ProductsState extends State<Products> {
         children: <Widget>[
           // 综合
           Container(
-            child: FlatButton(
+            child: TextButton(
               onPressed: () {
                 setState(() {
                   _filterIndex = 0;
@@ -160,7 +160,7 @@ class _ProductsState extends State<Products> {
           ),
           // 销量
           Container(
-            child: FlatButton(
+            child: TextButton(
               onPressed: () {
                 setState(() {
                   _filterIndex = 1;
@@ -179,7 +179,7 @@ class _ProductsState extends State<Products> {
             ),
           ),
           Container(
-            child: FlatButton(
+            child: TextButton(
               onPressed: () {
                 setState(() {
                   _filterIndex = 2;
@@ -198,7 +198,7 @@ class _ProductsState extends State<Products> {
             ),
           ),
           Container(
-            child: FlatButton(
+            child: TextButton(
               onPressed: () {
                 setState(() {
                   _filterIndex = 3;

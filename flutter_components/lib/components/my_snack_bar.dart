@@ -11,7 +11,7 @@ class MySnackBar extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
-          leading: FlatButton(
+          leading: TextButton(
             child: Icon(
               Icons.arrow_back_ios,
               color: Colors.white,
@@ -31,11 +31,7 @@ class MySnackBar extends StatelessWidget {
         ),
         floatingActionButton: Builder(builder: (BuildContext context) {
           return FloatingActionButton(
-            onPressed: () {
-              Scaffold.of(context).showSnackBar(SnackBar(
-                content: Text('显示 SnackBar'),
-              ));
-            },
+            onPressed: () {},
             child: Icon(Icons.add),
             shape: CircleBorder(),
           );

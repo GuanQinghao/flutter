@@ -13,7 +13,7 @@ class MyFloatingActionButton extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
-          leading: FlatButton(
+          leading: TextButton(
             child: Icon(
               Icons.arrow_back_ios,
               color: Colors.white,
@@ -39,11 +39,7 @@ class MyFloatingActionButton extends StatelessWidget {
             backgroundColor: Colors.blue,
             elevation: 7.0,
             highlightElevation: 14.0,
-            onPressed: () {
-              Scaffold.of(context).showSnackBar(
-                SnackBar(content: Text('你点击了 FloatingActionButton')),
-              );
-            },
+            onPressed: () {},
             mini: false,
             shape: CircleBorder(),
             isExtended: false,

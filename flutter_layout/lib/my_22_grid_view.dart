@@ -44,7 +44,7 @@ class _My22GridViewLayoutState extends State<My22GridViewLayout> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
-          leading: FlatButton(
+          leading: TextButton(
             child: Icon(
               Icons.arrow_back_ios,
               color: Colors.white,
